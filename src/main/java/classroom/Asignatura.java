@@ -11,7 +11,7 @@ public class Asignatura {
         this.nombre = "Sin nombre";
         this.codigoInterno = 0;
         this.codigoExterno = 0;
-        this.tipo = Tipo.FUNDAMENTACION;  // Inicializado a FUNDAMENTACION por defecto
+        this.tipo = Tipo.FUNDAMENTACION;  
     }
 
     public Asignatura(int codigoInterno, Tipo tipo) {
