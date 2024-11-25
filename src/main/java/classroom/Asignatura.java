@@ -1,15 +1,15 @@
 package classroom;
 
 public class Asignatura {
-    public String nombre;
-    public int codigoInterno;
-    public int codigoExterno;
+    public String nombre = "Sin nombre";
+    public int codigoInterno ;
+    public int codigoExterno ;
     public Tipo tipo;
 
     public Asignatura() {
         this.nombre = "Sin nombre";
-        this.codigoExterno = 0;
         this.tipo = Tipo.FUNDAMENTACION;
+        this.codigoExterno = 0;
     }
 
     public Asignatura(String nombre, Tipo tipo) {
@@ -19,9 +19,9 @@ public class Asignatura {
     }
 
     public Asignatura(int codigoExterno, Tipo tipo) {
-        this.nombre = "Sin nombre"; 
+        this.nombre = "Sin nombre";
+        this.tipo = tipo.FUNDAMENTACION ;
         this.codigoExterno = codigoExterno;
-        this.tipo = tipo;
     }
 
 
@@ -32,6 +32,17 @@ public class Asignatura {
         this.tipo = tipo;
     }
 
+    public void setCodigoInterno(int codigoInterno) {
+        this.codigoInterno = codigoInterno;
+    }
+
+    public void cambiarDatos(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void cambiarDatos(int codigoExterno) {
+        this.codigoExterno = codigoExterno;
+    }
 
     public String getNombre() {
         return nombre;
@@ -45,20 +56,12 @@ public class Asignatura {
         return codigoInterno;
     }
 
-    public Tipo getTipo() {
-        return tipo;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public void setCodigoExterno(int codigoExterno) {
         this.codigoExterno = codigoExterno;
     }
 
-    public void setCodigoInterno(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
+    public Tipo getTipo() {
+        return tipo;
     }
 
     public void setTipo(Tipo tipo) {
