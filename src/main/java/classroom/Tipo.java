@@ -8,13 +8,11 @@ public enum Tipo {
     private int codigo;
     private String nombre;
 
-    // Constructor modificado para incluir un valor por defecto en el nombre
     Tipo(int codigo, String nombre) {
         this.codigo = codigo;
         this.nombre = nombre;
     }
 
-    // Métodos getter
     public int getCodigo() {
         return codigo;
     }
