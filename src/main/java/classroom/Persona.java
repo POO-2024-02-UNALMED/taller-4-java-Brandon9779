@@ -1,6 +1,7 @@
 package classroom;
 
 public class Persona {
+
     private long cedula;
     private String nombre;
 
@@ -10,17 +11,15 @@ public class Persona {
     }
 
     public Persona(String nombre) {
-        this.cedula = 0;  
+        this.cedula = 0;
         this.nombre = nombre;
     }
 
-
     public Persona(long cedula) {
         this.cedula = cedula;
-        this.nombre = ""; 
+        this.nombre = "";
     }
 
-  
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
@@ -31,17 +30,16 @@ public class Persona {
         this.nombre = nombre;
     }
 
-
     public long getCedula() {
         return cedula;
     }
 
-    public void setCedula(long cedula) {
-        this.cedula = cedula;
-    }
-
     public String getNombre() {
         return nombre;
+    }
+
+    public void setCedula(long cedula) {
+        this.cedula = cedula;
     }
 
     public void setNombre(String nombre) {
