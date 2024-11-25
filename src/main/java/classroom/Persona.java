@@ -35,11 +35,10 @@ public class Persona {
     }
 
     public Persona() {
-        this.cedula = 0;
-        this.nombre = "Sin nombre";
+        this.cedula = totalPersonas + 1;
+        this.nombre = "Sin Nombre";
         totalPersonas++;
     }
-
 
     public long getCedula() {
         return cedula;
@@ -59,3 +58,5 @@ public class Persona {
         this.cedula = cedula;
     }
 }
+
+
