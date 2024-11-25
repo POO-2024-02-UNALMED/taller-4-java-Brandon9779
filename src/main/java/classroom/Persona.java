@@ -10,20 +10,30 @@ public class Persona {
         totalPersonas = 0;
     }
 
+    // Constructor con parámetros
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
         totalPersonas++;
     }
 
+    // Constructor solo con nombre
     public Persona(String nombre) {
         this.nombre = nombre;
-        this.cedula = 0;
+        this.cedula = 0; // Cédula por defecto
         totalPersonas++;
     }
 
+    // Constructor solo con cédula
     public Persona(long cedula) {
         this.cedula = cedula;
+        this.nombre = ""; // Nombre por defecto
+        totalPersonas++;
+    }
+
+
+    public Persona() {
+        this.cedula = 0;
         this.nombre = ""; 
         totalPersonas++;
     }
