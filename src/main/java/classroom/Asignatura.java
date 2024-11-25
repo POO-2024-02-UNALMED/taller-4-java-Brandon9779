@@ -6,12 +6,14 @@ public class Asignatura {
     int codigoExterno;
     Tipo tipo;
 
+
     public Asignatura() {
         this.nombre = "Sin nombre";
         this.tipo = Tipo.FUNDAMENTACION;
         this.codigoExterno = 0;
     }
 
+   
     public Asignatura(String nombre, Tipo tipo) {
         this.nombre = nombre;
         this.tipo = tipo;
@@ -30,7 +32,6 @@ public class Asignatura {
         this.codigoExterno = codigoExterno;
         this.tipo = tipo;
     }
-
 
     public void cambiarDatos(String nombre) {
         this.nombre = nombre;
