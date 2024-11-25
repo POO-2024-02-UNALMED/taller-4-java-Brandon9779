@@ -15,11 +15,11 @@ public class Asignatura {
     public Asignatura(String nombre, Tipo tipo) {
         this.nombre = nombre;
         this.tipo = tipo;
-        this.codigoExterno = 0;  
+        this.codigoExterno = 0; 
     }
 
     public Asignatura(int codigoExterno, Tipo tipo) {
-        this.nombre = "Sin nombre";
+        this.nombre = "Sin nombre"; 
         this.codigoExterno = codigoExterno;
         this.tipo = tipo;
     }
