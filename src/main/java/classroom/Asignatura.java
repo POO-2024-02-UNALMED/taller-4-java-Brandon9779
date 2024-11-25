@@ -1,15 +1,14 @@
 package classroom;
 
 public class Asignatura {
-
-    private String nombre;
-    private Tipo tipo;
-    private int codigoExterno;
+    public String nombre = "Sin nombre";
+    public int codigoInterno;
+    public int codigoExterno;
+    public  Tipo tipo;
 
     public Asignatura() {
-        this.nombre = "Sin nombre";
-        this.tipo = Tipo.FUNDAMENTACION;
         this.codigoExterno = 0;
+        this.tipo = Tipo.FUNDAMENTACION;
     }
 
     public Asignatura(String nombre, Tipo tipo) {
@@ -19,20 +18,30 @@ public class Asignatura {
     }
 
     public Asignatura(int codigoExterno, Tipo tipo) {
-        this.nombre = "Sin nombre";
-        this.tipo = tipo;
         this.codigoExterno = codigoExterno;
+        this.tipo = tipo;
+        this.nombre = "Sin nombre";
     }
 
     public Asignatura(String nombre, int codigoExterno, int codigoInterno, Tipo tipo) {
         this.nombre = nombre;
         this.codigoExterno = codigoExterno;
+        this.codigoInterno = codigoInterno;
         this.tipo = tipo;
     }
 
-    public void cambiarDatos(int nuevoCodigo) {
-        this.codigoExterno = nuevoCodigo;
+    public void setCodigoInterno(int codigoInterno) {
+        this.codigoInterno = codigoInterno;
     }
+
+    public void cambiarDatos(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void cambiarDatos(int codigoExterno) {
+        this.codigoExterno = codigoExterno;
+    }
+
 
     public String getNombre() {
         return nombre;
@@ -42,15 +51,20 @@ public class Asignatura {
         return codigoExterno;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public int getCodigoInterno() {
+        return codigoInterno;
     }
 
-    public void setTipo(Tipo tipo) {
-        this.tipo = tipo;
+    public void setCodigoExterno(int codigoExterno) {
+        this.codigoExterno = codigoExterno;
     }
 
     public Tipo getTipo() {
         return tipo;
     }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
 }
+
