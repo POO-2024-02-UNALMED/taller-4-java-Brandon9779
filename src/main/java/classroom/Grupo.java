@@ -2,11 +2,11 @@ package classroom;
 
 public class Grupo {
 
-    private Persona[] estudiantes;
-    private Persona profesor;
-    private Asignatura asignatura;
-    public  int codigo;
-    private String horario;
+    public  Persona[] estudiantes;
+    public  Persona profesor;
+    public  Asignatura asignatura;
+    public int codigo;
+    public  String horario;
 
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         this.estudiantes = estudiantes;
@@ -16,9 +16,11 @@ public class Grupo {
         this.horario = horario;
     }
 
+
     public Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         this(new Persona[cantidadEstudiantes], profesor, asignatura, codigo, horario);
     }
+
 
     public Grupo(int codigo, Persona profesor, Asignatura asignatura, String horario) {
         this(new Persona[0], profesor, asignatura, codigo, horario);
@@ -43,6 +45,7 @@ public class Grupo {
     public String getHorario() {
         return horario;
     }
+
 
     public void cambiarEstudiante(int indice, Persona estudiante) {
         if (indice >= 0 && indice < estudiantes.length) {
