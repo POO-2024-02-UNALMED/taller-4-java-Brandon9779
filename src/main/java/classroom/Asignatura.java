@@ -8,8 +8,8 @@ public class Asignatura {
 
     public Asignatura() {
         this.nombre = "Sin nombre";
-        this.tipo = Tipo.FUNDAMENTACION;
         this.codigoExterno = 0;
+        this.tipo = Tipo.FUNDAMENTACION;
     }
 
     public Asignatura(String nombre, Tipo tipo) {
@@ -20,15 +20,14 @@ public class Asignatura {
 
     public Asignatura(int codigoExterno, Tipo tipo) {
         this.nombre = "Sin nombre";
-        this.tipo = tipo.FUNDAMENTACION ;
         this.codigoExterno = codigoExterno;
+        this.tipo = tipo;
     }
 
-
-    public Asignatura(String nombre, int codigoExterno, int codigoInterno, Tipo tipo) {
+    public Asignatura(String nombre, int codigoInterno, int codigoExterno, Tipo tipo) {
         this.nombre = nombre;
-        this.codigoExterno = codigoExterno;
         this.codigoInterno = codigoInterno;
+        this.codigoExterno = codigoExterno;
         this.tipo = tipo;
     }
 
