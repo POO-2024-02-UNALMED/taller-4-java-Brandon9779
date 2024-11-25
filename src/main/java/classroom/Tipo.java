@@ -20,4 +20,12 @@ public enum Tipo {
     public String getNombre() {
         return nombre;
     }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
