@@ -9,7 +9,7 @@ public class Asignatura {
     public Asignatura() {
         this.nombre = "Sin nombre";
         this.codigoExterno = 0;
-        this.tipo = Tipo.FUNDAMENTACION; 
+        this.tipo = Tipo.FUNDAMENTACION;
     }
 
     public Asignatura(String nombre, Tipo tipo) {
@@ -19,9 +19,9 @@ public class Asignatura {
     }
 
     public Asignatura(int codigoExterno, Tipo tipo) {
+        this.nombre = "Sin nombre";
         this.codigoExterno = codigoExterno;
         this.tipo = tipo;
-        this.nombre = "Sin nombre"; 
     }
 
     public Asignatura(String nombre, int codigoExterno, int codigoInterno, Tipo tipo) {
@@ -67,5 +67,3 @@ public class Asignatura {
         this.tipo = tipo;
     }
 }
-
-
