@@ -8,7 +8,7 @@ public class Grupo {
     public final int codigo;
     public String horario;
 
-
+    // Constructor principal
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         this.estudiantes = estudiantes;
         this.profesor = profesor;
@@ -17,7 +17,7 @@ public class Grupo {
         this.horario = horario;
     }
 
-
+    // Constructor alternativo
     public Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         Persona[] personas = new Persona[cantidadEstudiantes];
         this.estudiantes = personas;
